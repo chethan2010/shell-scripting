@@ -1,9 +1,9 @@
 #!bin/bash
 
-PERSON1=SHANKAR
-PERSON2=RAJU
-PERSON3=KRISHNA
-PERSON4=KAMLASH
+PERSON1=ChandrababuNaidu
+PERSON2=KCR
+PERSON3=Jagan
+PERSON4=Kalyan
 echo "$PERSON1, Hello Ramesh how are you?"
 echo "$PERSON2, Hi Ramesh how are you?"
 echo "$PERSON3, Iam fine too.how is your work?"
