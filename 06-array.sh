@@ -1,4 +1,4 @@
 #!/bin/bash
 Movies=("RRR","SALAR","DEVARA")
 #always indeax start with 0
-echo "list of movies:${Movies[0]}"
+echo "first of movie is:${Movies[0]}"
