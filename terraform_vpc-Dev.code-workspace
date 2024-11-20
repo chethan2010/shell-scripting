@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "../terraform_vpc-Dev"
+		},
+		{
+			"path": "../terrafrom-expencevpc-dev"
+		},
+		{
+			"path": "../terraform-infra-dev"
+		},
+		{
+			"path": "../learn-jenkins"
+		},
+		{
+			"path": "../cicd"
+		},
+		{
+			"path": "../backend-deploy"
+		},
+		{
+			"path": "../kuberneties/k8-resource"
+		}
+	],
+	"settings": {}
+}
