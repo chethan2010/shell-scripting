@@ -1,4 +1,4 @@
 #!/bin/bash
-Movies=("RRR","SALAR","DEVARA")
+MOVIES=("RRR","SALAR","DEVARA")
 #always indeax start with 0
-echo "first movie is: ${Movies[0]}"
+echo "first movie is: ${MOVIES[0]}"
