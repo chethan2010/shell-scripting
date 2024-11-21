@@ -15,3 +15,5 @@ echo "Home directory of current user: $HOME"
 echo "Which user is running this script: $USER"
 
 echo "Which user is running this script: $HOSTNAME"
+
+echo "To print process Id of current shellscript: $$"
