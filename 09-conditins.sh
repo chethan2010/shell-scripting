@@ -3,7 +3,7 @@
 Number1=$1
 #Number2=$2
 
-if  [Number1 -gt 100]
+if  [$Number1 -gt 100]
 then
     echo "Number one is Greater then 100"
 else
