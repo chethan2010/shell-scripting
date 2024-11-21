@@ -1,2 +1,2 @@
 #!/bin/bash
-dnf insall mysql -y
+dnf install mysql -y
