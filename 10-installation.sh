@@ -1,11 +1,11 @@
 #!/bin/bash
 
 USERID=$(id -u)
-if [ $USERID  -eq 0 ]
+if [ $USERID  -ne 0 ]
 then 
- echo "you are super user"
+ echo "Please run your script with root access"
  else
- echo "you are not super user"
+ echo "you are a super user"
  fi 
 
 
