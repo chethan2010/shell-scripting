@@ -7,9 +7,6 @@ then
  else
  echo "you are a super user"
  fi 
+sudo dnf install mysql -y
 
-
-
-#sudo dnf install mysql -y
-
-
+echo "script is proceding"
