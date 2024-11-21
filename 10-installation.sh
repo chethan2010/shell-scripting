@@ -8,6 +8,14 @@ then
  else
  echo "you are a super user"
  fi 
+
 sudo dnf install mysql -y
+ 
+if [ $? -ne 0 ]
+then
+    echo "Installation of mysql failed...."
+    exit 1
+else 
+    echo "Installation of mysql is success"
 
 echo "script is proceding"
