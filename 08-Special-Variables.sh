@@ -17,3 +17,6 @@ echo "Which user is running this script: $USER"
 echo "Which user is running this script: $HOSTNAME"
 
 echo "To print process Id of current shellscript: $$"
+sleep 60
+echo "Proces id of last back ground command: $!"
+
