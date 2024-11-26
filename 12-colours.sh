@@ -20,7 +20,6 @@ VALIDATE(){
 
 }
 
-VALIDATE(){
     if [ $USERID -ne 0 ]
     then
         echo "Please Run script as Super User "
@@ -28,7 +27,7 @@ VALIDATE(){
     else 
         echo "You are a Super User"
     fi
-}
+
 
 
 dnf install mysql -y &>>$LOGFILE
