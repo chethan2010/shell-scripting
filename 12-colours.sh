@@ -3,6 +3,8 @@ USERID=$(id -u)
 TIMESTAMP=$(date +%H-%M-%S)
 SCRIPT_NAME=$(echo 0 | cut '.' -f )
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
+R="\e[3m"
+G="\e[]"
 
 VALIDATE(){
     if [ $USERID -ne 0 ]
