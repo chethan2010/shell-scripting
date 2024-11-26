@@ -31,11 +31,11 @@ VALIDATE(){
 }
 
 
-dnf install mysql -y
+dnf install mysql -y &>>$LOGFILE
 VALIDATE $? "INSTALLING MYSQL"
 
-dnf install git -y
+dnf install git -y &>>$LOGFILE
 VALIDATE $? "INSTALLING git"
 
-dnf install dockerr -y
+dnf install dockerr -y &>>$LOGFILE
 VALIDATE $? "INSTALLING dockerr"
