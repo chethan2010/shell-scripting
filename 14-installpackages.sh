@@ -13,7 +13,7 @@ VALIDATE(){
         echo -e "$2....$R Failure $N"
         exit 1
     else
-        echo "$2..... $G Success $G"
+        echo -e "$2..... $G Success $N"
     fi
 }
 
@@ -31,7 +31,7 @@ VALIDATE(){
         dnf list installed $i &>>$LOGFILE
         if [ $? -eq 0 ]
         then 
-            echo "$i is already installed ..... $Y skipping $N"
+            echo -e "$i is already installed ..... $Y skipping $N"
         else
             echo  "$i is not installed need to be installed"
     fi 
