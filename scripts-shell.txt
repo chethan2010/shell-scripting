@@ -1,0 +1,112 @@
+conditions
+===========
+
+NUMBER=$1
+if [ $NUMBER -gt 100 ]
+ then oo
+	echo "given $NUMBER is greater than 100"
+else
+	echo "given $NUMBER is less than 100"
+fi
+
+========================================================
+
+echo "please enter user Name:"
+
+read -s USERNAME
+
+echo "Please Enter Passward:"
+
+read -s PASSWARD
+
+echo "your userName is:$USERNAME and Passward:$PASSWARD"
+
+
+==================================================================
+
+USERID=$(id -u)
+
+if [ USERID -ne 0]
+then
+	echo "Please run script as Super user"
+	exit 1
+else
+		dnf install mysql -y
+fi
+=====================================================================
+installation
+====================================================================================================
+#!/bin/bash
+
+USERID=$(id -u)
+if [ $USERID -ne 0 ]
+then
+        echo "Run script as root user"
+        exit 1
+else
+        echo "Your a root user"
+fi
+        sudo dnf install mysql -y
+
+if [ $? -ne 0 ]
+then
+        echo "mysql is not installed "
+        exit
+else
+        echo "Mysql installed sucessfully"
+fi
+        sudo dnf install git -y
+if [ $? -ne 0 ]
+then
+        echo "git is not installed"
+        exit 1
+else
+        echo "git installed sucessfully"
+fi
+============================================================================================
+#!/bin/bash
+
+USERID=$(id -u)
+
+VALIDATE(){
+
+if [ $1 -ne 0 ]
+then
+        echo "$2 .... Failure"
+        exit
+else
+        echo "$2..... Success"
+
+fi
+}
+
+if [ $USERID -ne 0 ]
+then
+        echo "Run script as root user"
+        exit 1
+else
+        echo "Your a root user"
+fi
+
+
+        sudo dnf install mysql -y
+        vALIDATE $? "Installing mysqlssh -i"
+
+        sudo dnf install git -y
+        VALIDATE $? "Installing git"
+===========================================================================================================
+
+In this script, $1 and $2 are positional parameters that represent arguments passed to the VALIDATE function when it is called.
+
+$1 is the first argument to VALIDATE, which in this script is intended to be the exit status ($?) of the previous command. It indicates whether the previous command succeeded (exit status 0) or failed (non-zero).
+
+$2 is the second argument to VALIDATE, which is a descriptive message about the operation being performed, such as "Installing mysqlssh -i" or "Installing git".
+
+When VALIDATE is called, it checks if $1 (the command's exit status) is not equal to 0 (failure). If so, it prints an error message along with the failure notice and exits. Otherwise, it confirms success with the provided message.
+
+========================================================================================================
+
+
+date 
+date +%F+%H+%S
+

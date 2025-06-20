@@ -1,0 +1,69 @@
+conditions
+===========
+
+NUMBER=$1
+if [ $NUMBER -gt 100 ]
+ then oo
+	echo "given $NUMBER is greater than 100"
+else
+	echo "given $NUMBER is less than 100"
+fi
+
+========================================================
+
+echo "please enter user Name:"
+
+read -s USERNAME
+
+echo "Please Enter Passward:"
+
+read -s PASSWARD
+
+echo "your userName is:$USERNAME and Passward:$PASSWARD"
+
+
+==================================================================
+
+USERID=$(id -u)
+
+if [ USERID -ne 0]
+then
+	echo "Please run script as Super user"
+	exit 1
+else
+		dnf install mysql -y
+fi
+=====================================================================
+installation of mysql
+
+#!/bin/bash
+
+USERID= $(id -u)
+if [ $USERID -ne 0]
+then
+	echo "Please run script as root user"
+	exit 1
+else
+	echo "you are a root user"
+fi
+	sudo dnf install mysql -y
+	
+if [ $? -ne 0]
+then
+	echo "Installation of mysql is failed"
+	exit1
+else
+	echo "sucessfully mysql installed"
+fi	
+
+sudo dnf install git -y
+	
+if [ $? -ne 0]
+then
+	echo "Installation of git is failed"
+	exit1
+else
+	echo "sucessfully git installed"
+fi	
+ echo "script is procedding to install"
+==========================================================================================================
