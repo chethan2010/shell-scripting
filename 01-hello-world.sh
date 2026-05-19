@@ -1,3 +1,3 @@
-#this is a sample script
-#!bin/bash
-echo "Hello world programming"
+
+#!/bin/bash
+echo "Hello world program"
